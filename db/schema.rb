@@ -20,10 +20,10 @@ ActiveRecord::Schema.define(version: 20130831013214) do
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "rank",       default: 0, null: false
     t.integer  "score"
   end
 
-  add_index "articles", ["title"], name: "index_articles_on_title", unique: true
   add_index "articles", ["user_id", "created_at"], name: "index_articles_on_user_id_and_created_at"
 
   create_table "schoolnews", force: true do |t|
@@ -35,7 +35,6 @@ ActiveRecord::Schema.define(version: 20130831013214) do
     t.datetime "updated_at"
   end
 
-  add_index "schoolnews", ["title"], name: "index_schoolnews_on_title", unique: true
   add_index "schoolnews", ["user_id", "created_at"], name: "index_schoolnews_on_user_id_and_created_at"
 
   create_table "users", force: true do |t|

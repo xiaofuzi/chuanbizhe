@@ -3,9 +3,11 @@
 	<div class="span8">
     <% if @articles %>
         <h4>Those articles are worthing to reading!</h4>
-		  <ol class="articles">
+        
+		  <ol class="articles ">
+		  	
 		  	<% @articles.each do |article| %>
-		  	<li>
+		  	<li >
 		  		
 		  	    <% if (article.website? && !article.content?) %>
 	               <a href="<%= article.website %>"   target="_blank"><%= article.title %></a>
@@ -18,10 +20,13 @@
 	  	                <%= time_ago_in_words(article.created_at) %> ago|
 	                </span>
 	                <en class="btn-link" ><%= link_to  "disquss", article_path(article.id),:id => "post_user",:target => '_blank' %></en>
+	                
 	                </div>
 	            
 	        </li>    
 		  	<% end %>
+
+		  
 		  </ol>
 		  
 	<% end %>
