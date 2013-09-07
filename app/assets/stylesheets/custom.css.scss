@@ -11,6 +11,7 @@ html{
 
 body {
 	padding-top: 60px;
+  
 }
 
 section {
@@ -79,7 +80,8 @@ p {
 }
 
 #logo:hover{
-	color:#fff;
+	color:gray;
+  text-decoration:none;
 }
 
 /*footer*/
@@ -258,3 +260,14 @@ a:hover{
   color:#2a5caa;
 }
 
+
+
+
+.footer{
+
+        bottom: 50px;
+        height: 50px;
+        left: 0;
+        position: absolute;
+        right: 0;
+       }

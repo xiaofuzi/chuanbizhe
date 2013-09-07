@@ -1,5 +1,6 @@
 class StaticPagesController < ApplicationController
   def home
+   
   	@articles = all_articles
   	@article  = Article.find_by_id(1)
   end
