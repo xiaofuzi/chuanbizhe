@@ -7,7 +7,7 @@
 		  <ol class="articles">
 		  	<% @schoolnews.each do |news| %>
 		  	<li>
-		  		<div class="box">
+		  		<div >
 		  	    <% if news.site? %>
 	               <a href="<%= news.site %>" target="_blank"><%= news.title %></a>
 	            <% else %>

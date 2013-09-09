@@ -2,7 +2,7 @@
 <div class="container">
 	<div class="span8 bigbox">
     <% if @articles %>
-        
+        <h4>畅游在知识的海洋</h4>
         
 		  <ol class="articles ">
 		  	
@@ -10,7 +10,7 @@
 		  	<li >
 		  		
 		  		
-		  		<div class="box">
+		  		<div >
 		  	    <% if (article.website? && !article.content?) %>
 	               <a href="<%= article.website %>"   target="_blank"><%= article.title %></a>
 	            <% else %>
@@ -32,6 +32,7 @@
                     <% end %>
                 </div>
                 <% end %>
+
             </div>
             </div>
 	        </li>    
