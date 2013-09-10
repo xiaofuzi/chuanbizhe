@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
-ruby '2.0.0'
+
 gem 'bootstrap-sass', '2.3.2.0'
 # Use sqlite3 as the database for Active Record
 group :development do
@@ -58,7 +58,7 @@ group :test do
 end
 
 group :production do
-	gem 'pg', '0.15.1'
+	gem "mysql", "~> 2.9.1"
 end
 
 gem 'rb-readline', '~> 0.4.2'
